@@ -17,6 +17,6 @@
   ],
 
   "background": { 
-    "scripts": ["jquery.min.js", "SwaggerJacker.js", "background.js"]
+    "scripts": ["jquery.min.js", "models.js", "SwaggerJacker.js", "background.js"]
   }
 }

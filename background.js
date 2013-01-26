@@ -1,16 +1,15 @@
 // On page load
-// Load SJ library
+// Load SwaggerJacker library
 chrome.tabs.executeScript( tab, { file:'SwaggerJacker.min.js', allFrames:false }, function(){
 
 	// Fetch Tags
-	// SwaggerJacker.fetchTags ( currentTab.Url );
+	SwaggerJacker.fetchTags ( currentTab.Url );
 
 		// Does page have tags
-		if(SwaggerJacker.Tags.length > 0 ){
+		if( SwaggerJacker.Tags.length > 0 ){
 			
 			// Yes
 			// Change extension icon
-
 		}
 
 		// If library loaded
@@ -22,10 +21,10 @@ chrome.tabs.executeScript( tab, { file:'SwaggerJacker.min.js', allFrames:false }
 			    chrome.tabs.executeScript( tab, { file:'jquery.min.js', allFrames:false }, function(){
 
 			    		// Show Tagging Interface
-			    		// SwaggerJacker.render( currentTab );
+			    		SwaggerJacker.render( currentTab );
 
 			    			// Show Tags
-			    			// SwaaggerJacker.showTags( currentTab );
+			    			SwaaggerJacker.showTags( currentTab );
 
 			    		// Tagging interface should allow user to:
 
