@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Swagger Jacker",
+  "version": "1",
+  "description": "Find swag, Tag swag.",
+  "update_url": "http://www.omarstewey.com/dev/cx/swaggerjacker/updates.xml",
+
+  "browser_action": {
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+
+  "options_page": "options.html",
+
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+
+  "background": { 
+    "scripts": ["jquery.min.js", "SwaggerJacker.js", "background.js"]
+  }
+}
